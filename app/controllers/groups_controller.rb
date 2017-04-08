@@ -53,7 +53,6 @@ class GroupsController < ApplicationController
       flash[:warning] = "你已经是本讨论版成员"
     end
     redirect_to group_path(@group)
-    end
   end
 
   def quit
@@ -66,7 +65,6 @@ class GroupsController < ApplicationController
       flash[:warning] = "你还不是是本讨论版成员"
     end
     redirect_to group_path(@group)
-    end
   end
   private
 
